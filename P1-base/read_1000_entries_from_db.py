@@ -10,9 +10,9 @@ import psycopg2
 # Configuracion de la base de datos
 db_config = {
     "dbname": "si2db",  # Nombre de la base de datos
-    "user": "pablogomez0904@gmail.com",  # Reemplaza con tu usuario de PostgreSQL
-    "password": PASSWORD,  # Reemplaza con tu contrasegna
-    "host": "postgresql://neondb_owner:npg_riD0OG9xXSAJ@ep-round-bonus-agdfmsb0-pooler.c-2.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require",  # Cambia si el host es diferente
+    "user": "alumnodb",  # Reemplaza con tu usuario de PostgreSQL
+    "password": "alumnodb",  # Reemplaza con tu contrasegna
+    "host": "192.168.1.49",  # Cambia si el host es diferente
     "port": 15432,  # Cambia si tu puerto es diferente
 }
 
