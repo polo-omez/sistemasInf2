@@ -14,9 +14,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.urls import path
-from visaAppWSFrontend.views import (aportarinfo_tarjeta, aportarinfo_pago,
-                           testbd, getpagos, delpago)
+
+from visaAppWSFrontend.views import (
+    aportarinfo_pago,
+    aportarinfo_tarjeta,
+    delpago,
+    getpagos,
+    testbd,
+)
 
 urlpatterns = [
     path("", aportarinfo_tarjeta, name="index"),
