@@ -45,7 +45,7 @@ def eliminar_pago(idPago):
     :param idPago: id of the pago to be deleted
     :return True if succesful, False otherwise
     """
-    url = f"{API_URL}pago/{idPago}/"
+    url = f"{API_URL}pago/{idPago}"
     try:
         response = requests.delete(url)
         return response.status_code == 200
@@ -60,7 +60,7 @@ def get_pagos_from_db(idComercio):
     :param idComercio: id of the comercio
     :return list of pagos found or None
     """
-    url = f"{API_URL}comercio/{idComercio}/"
+    url = f"{API_URL}comercio/{idComercio}"
     try:
         response = requests.get(url)
         if response.status_code == 200:
