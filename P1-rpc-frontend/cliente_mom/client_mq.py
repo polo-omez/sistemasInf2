@@ -15,7 +15,7 @@ def cancelar_pago(hostname, port, id_pago):
         channel = connection.channel()
 
     except Exception as e:
-        print("Error al conectar al host remoto")
+        print(f"Error al conectar al host remoto: {e}")
         exit()
 
     channel.queue_declare(queue="pago_cancelacion")
